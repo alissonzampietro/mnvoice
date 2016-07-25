@@ -1,12 +1,23 @@
 {
   "name": "mnvoice",
   "description": "Application transform voice in text using microphone and google API",
-  "main": "mnvoice.js",
+  "main": [
+    "mnvoice.js",
+    "speaker.js"
+  ],
   "keywords": [
     "voice",
     "recognizer",
   ],
-  "authors": "Alisson <alisson@mentesnotaveis.com.br>",
+  "authors": [
+    "Alisson <alisson@mentesnotaveis.com.br>"
+  ],
   "license": "MIT",
-  "private": false
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
 }

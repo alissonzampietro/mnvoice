@@ -1,6 +1,8 @@
 'use strict';
 var MnVoice = {
-	escutar:function(){
+	escutar:function(language){
+
+		var language = language || "pt-br";
 		// Test browser support
 		window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 		 
@@ -12,7 +14,7 @@ var MnVoice = {
 		}
 
 		var recognizer = new window.SpeechRecognition();
-		recognizer.lang="pt-br";
+		recognizer.lang=language;
 		recognizer.continuous = true;
 		recognizer.interimResults = true;
 

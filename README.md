@@ -8,7 +8,8 @@
 * start application using the following comands:
 
 ```javascript
-var retorno = MnVoice.escutar();
+//como parâmetro do escutar você pode inserir a sigla do idioma que deseja que o recognizer identifique
+var retorno = MnVoice.escutar("pt-br");
 retorno.onresult = function(escrita){
 	var fala = MnVoice.transcrever(escrita);
 }
